@@ -24,7 +24,7 @@ class ConnectController {
     ),
     ConnectModel(
       connectName: "Gmail",
-      link: "mailto://glintarman@gmail.com",
+      link: "mailto:glintarman@gmail.com",
       image: "assets/images/gmail.png",
     ),
   ];
