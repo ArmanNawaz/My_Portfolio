@@ -16,10 +16,17 @@ void _resume() {
 }
 
 void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: MyApp(),
-  ));
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const MyApp(),
+      theme: ThemeData(
+        primaryIconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
+      ),
+    ),
+  );
 }
 
 class MyApp extends StatefulWidget {
@@ -41,34 +48,26 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My Portfolio',
-      home: Scaffold(
-        appBar: MediaQuery.of(context).size.width >= 900
-            ? null
-            : AppBar(
-                iconTheme: const IconThemeData(color: Colors.black),
-                elevation: 0,
-                backgroundColor: Colors.white,
-                actions: const [
-                  Padding(
-                    padding: EdgeInsets.only(left: 16.0, right: 16.0),
-                    child: NavbarLogo(),
-                  )
-                ],
-              ),
-        drawer:
-            MediaQuery.of(context).size.width >= 900 ? null : const MyDrawer(),
-        body: Column(
-          children: [MyHeader(), MyHomePage()],
-        ),
-        floatingActionButton: const CreateFloatingButton(),
+    return Scaffold(
+      appBar: MediaQuery.of(context).size.width >= 900
+          ? null
+          : AppBar(
+              iconTheme: const IconThemeData(color: Colors.black),
+              elevation: 0,
+              backgroundColor: Colors.white,
+              actions: const [
+                Padding(
+                  padding: EdgeInsets.only(left: 16.0, right: 16.0),
+                  child: NavbarLogo(),
+                )
+              ],
+            ),
+      drawer:
+          MediaQuery.of(context).size.width >= 900 ? null : const MyDrawer(),
+      body: Column(
+        children: [MyHeader(), MyHomePage()],
       ),
-      theme: ThemeData(
-        primaryIconTheme: const IconThemeData(
-          color: Colors.black,
-        ),
-      ),
+      floatingActionButton: const CreateFloatingButton(),
     );
   }
 }

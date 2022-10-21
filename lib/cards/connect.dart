@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/controller/connnect_controller.dart';
+import 'package:portfolio_new/controller/connect_controller.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Connect extends StatelessWidget {
