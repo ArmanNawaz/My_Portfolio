@@ -26,7 +26,7 @@ class MyProgressIndicator extends StatelessWidget {
           children: [
             Center(
               child: Text(
-                "${value.toString()} / ${total.toString()}",
+                "${value.toInt().toString()} / ${total.toInt().toString()}",
                 style: const TextStyle(
                     fontSize: 20.0, fontWeight: FontWeight.bold),
               ),

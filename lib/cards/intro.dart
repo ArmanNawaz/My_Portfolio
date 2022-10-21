@@ -90,10 +90,22 @@ class MyIntro extends StatelessWidget {
                         style: GoogleFonts.aBeeZee(fontSize: 20),
                         child: AnimatedTextKit(
                           animatedTexts: [
-                            RotateAnimatedText('Android Development'),
-                            RotateAnimatedText('Web Development'),
-                            RotateAnimatedText('Problem Solving'),
-                            RotateAnimatedText('Languages: C, C++, Python'),
+                            RotateAnimatedText('Android Development',
+                                textStyle: const TextStyle(
+                                    color: Colors.teal,
+                                    fontWeight: FontWeight.bold)),
+                            RotateAnimatedText('Web Development',
+                                textStyle: const TextStyle(
+                                    color: Colors.teal,
+                                    fontWeight: FontWeight.bold)),
+                            RotateAnimatedText('Problem Solving',
+                                textStyle: const TextStyle(
+                                    color: Colors.teal,
+                                    fontWeight: FontWeight.bold)),
+                            RotateAnimatedText('Languages: C, C++, Python',
+                                textStyle: const TextStyle(
+                                    color: Colors.teal,
+                                    fontWeight: FontWeight.bold)),
                           ],
                           isRepeatingAnimation: true,
                           repeatForever: true,

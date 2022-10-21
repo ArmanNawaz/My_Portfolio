@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_new/cards/leetcode.dart';
-import 'package:portfolio_new/controller/leetcode_model.dart';
+import 'package:portfolio_new/controller/leetcode_controller.dart';
 import 'package:portfolio_new/header/components/drawer.dart';
 import 'package:portfolio_new/header/header.dart';
 import 'package:portfolio_new/homepage.dart';
@@ -12,7 +12,7 @@ final Uri _url = Uri.parse(
     'https://drive.google.com/file/d/11t-f2_XDUBiM9v5FAYSXfmiUTiyjbuou/view?usp=sharing');
 
 void _resume() {
-  launchUrl(_url);
+  launchUrl(_url, mode: LaunchMode.externalApplication);
 }
 
 void main() {

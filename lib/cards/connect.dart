@@ -8,7 +8,7 @@ class Connect extends StatelessWidget {
 
   void gotoLink(String link) {
     Uri uri = Uri.parse(link);
-    launchUrl(uri);
+    launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
   @override

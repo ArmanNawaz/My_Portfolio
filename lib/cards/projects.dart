@@ -8,7 +8,7 @@ class Projects extends StatelessWidget {
 
   void gotoLink(String link) {
     Uri uri = Uri.parse(link);
-    launchUrl(uri);
+    launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
   @override
@@ -90,7 +90,7 @@ class Projects extends StatelessWidget {
       allProjectsList.add(eachProject);
     }
     return SizedBox(
-      height: 420,
+      height: 430,
       child:
           ListView(scrollDirection: Axis.horizontal, children: allProjectsList),
     );
