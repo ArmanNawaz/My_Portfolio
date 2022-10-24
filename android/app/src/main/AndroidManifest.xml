@@ -2,7 +2,7 @@
     package="com.arman.portfolio_new">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="My Portfolio"
+        android:label="Arman's Portfolio"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
