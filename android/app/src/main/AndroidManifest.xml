@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arman.portfolio_new">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="My Portfolio"
         android:name="${applicationName}"
