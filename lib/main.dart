@@ -19,6 +19,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: "My Portfolio",
       home: const MyApp(),
       theme: ThemeData(
         primaryIconTheme: const IconThemeData(
